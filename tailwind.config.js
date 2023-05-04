@@ -6,11 +6,16 @@ export default {
       animation: {
         spin: "spin 5s linear infinite",
         modifyScale: "modifyScale 0.3s ease-in-out",
+        changeOpDire: "changeOpDire 0.7s ease",
       },
       keyframes: {
         modifyScale: {
           "0%": { transform: "scale(0.9)", opacity: "0" },
           "100%": { transform: "scale(1)", opacity: "1" },
+        },
+        changeOpDire: {
+          "100%": { opacity: "1", transform: "translateX(0px)" },
+          "0%": { opacity: "0", transform: "translateX(-50px)" },
         },
       },
       fontFamily: {
@@ -21,5 +26,8 @@ export default {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require("tailwind-scrollbar-hide"),
+    require("tailwind-scrollbar")({ nocompatible: true }),
+  ],
 };

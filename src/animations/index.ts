@@ -1,6 +1,6 @@
 interface AnimationProps {
-  isSmall: boolean;
-  handlerDom: boolean;
+  isSmall?: boolean;
+  handlerDom?: boolean;
 }
 
 export function AnimationMotion({ isSmall, handlerDom }: AnimationProps) {
@@ -46,5 +46,22 @@ export function AnimationMotion({ isSmall, handlerDom }: AnimationProps) {
     },
   };
 
-  return { dragonMovement, videoAnimate, borderAnimate, projectsAnimate };
+  const arrowAnimate = {
+    initial: {
+      opacity: 0,
+      x: -50,
+    },
+    animate: {
+      opacity: 1,
+      x: 0,
+    },
+  };
+
+  return {
+    dragonMovement,
+    videoAnimate,
+    borderAnimate,
+    projectsAnimate,
+    arrowAnimate,
+  };
 }

@@ -12,12 +12,9 @@ export function Header({ setModal }: HeaderProps) {
 
   return (
     <header className="flex justify-between items-center sm:py-6 xl:px-6 2xl:px-[4.5rem] py-4 px-4 text-slate-100 font-Noto-Sans">
-      <div className="flex items-center gap-10">
-        <Link className="text-2xl md:text-4xl" to="/">
-          GJ
-        </Link>
-        <span className="text-2xl">...</span>
-      </div>
+      <Link className="text-2xl md:text-4xl" to="/">
+        GJ
+      </Link>
       <motion.h2
         className="text-xl md:text-3xl cursor-pointer lg:hover:text-4xl hover:duration-100"
         onClick={handleModal}

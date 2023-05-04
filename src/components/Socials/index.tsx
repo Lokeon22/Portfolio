@@ -6,7 +6,7 @@ import file from "../../assets/icons/file-download.svg";
 
 export function Socials() {
   return (
-    <nav className="absolute top-[75%] left-[16px] md:left-[30px] 2xl:left-[70px]">
+    <nav className="absolute top-3/4 left-[16px] md:left-[30px] 2xl:left-[70px]">
       <ul className="flex flex-col gap-3 fixed text-slate-200">
         <li>
           <a href="https://github.com/lokeon22" target="_blank">

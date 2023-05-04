@@ -55,6 +55,7 @@ export function Modal({ setModal }: ModalProps) {
           ref={form}
           onSubmit={sendEmail}
         >
+          <p className="text-gray-100 text-xs sm:text-sm">Entre em contato!</p>
           <input
             required
             type="text"

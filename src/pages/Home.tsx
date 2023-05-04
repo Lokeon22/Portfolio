@@ -2,12 +2,10 @@ import { useState, useRef } from "react";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-import { useIsSmall } from "../hooks/useMediaQuery";
-
-import { AnimationMotion } from "../components/Animations";
-import { Header } from "../components/Header";
+import { Container } from "../components/Container";
+import { AnimationMotion } from "../animations";
 import { Socials } from "../components/Socials";
-import { Modal } from "../components/ContactModal";
+import { useIsSmall } from "../hooks/useMediaQuery";
 
 import flower from "../assets/bg-flower.jpg";
 import dragon from "../assets/icons/double-dragon.svg";
@@ -15,7 +13,6 @@ import sword from "../assets/shortVideo/sword.mp4";
 
 export function Home() {
   const [handlerDom, setHandlerDom] = useState<boolean>(false);
-  const [modal, setModal] = useState<boolean>(false);
 
   const doubleDragon = useRef<HTMLImageElement>(null);
   const isSmall = useIsSmall();
@@ -32,13 +29,7 @@ export function Home() {
   }
 
   return (
-    <main
-      className="relative w-full h-screen bg-no-repeat bg-center lg:bg-cover z-40 font-Noto-Sans"
-      style={{ backgroundImage: `url(${flower})` }}
-    >
-      <div className="absolute w-full h-full bg-black opacity-80 -z-10" />
-      <Header setModal={setModal} />
-      {modal && <Modal setModal={setModal} />}
+    <Container bgImage={flower}>
       <section style={{ display: handlerDom ? "block" : "none" }}>
         <motion.div
           variants={borderAnimate}
@@ -108,13 +99,13 @@ export function Home() {
       </div>
       <Link
         className="fixed rotate-90 text-xl md:text-4xl font-semibold hover:scale-110 cursor-pointer max-[340px]:top-3/4 top-1/2 xl:left-[92%] md:left-[87%] left-[82%]"
-        to="/"
+        to="/projects"
       >
         <motion.p variants={projectsAnimate} initial="hidden" animate="show">
           Projetos
         </motion.p>
       </Link>
       <Socials />
-    </main>
+    </Container>
   );
 }
