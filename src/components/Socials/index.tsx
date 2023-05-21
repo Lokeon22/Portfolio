@@ -42,7 +42,10 @@ export function Socials() {
           </a>
         </li>
         <li>
-          <a href="#" target="_blank">
+          <a
+            href="https://drive.google.com/u/0/uc?id=1aOaJO0nTlWOAMLKOIlmh4h4pq4avae66&export=download"
+            target="_blank"
+          >
             <motion.img
               src={file}
               className="md:w-8 md:h-8 w-7 h-7 invert opacity-90"
