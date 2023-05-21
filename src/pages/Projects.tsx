@@ -12,7 +12,7 @@ export function Projects() {
       <section className="w-full h-4/5 flex items-center justify-center animate-changeOpDire">
         <AllProjects />
       </section>
-      <div className="max-w-[1680px] flex flex-col px-4 -mt-10 text-gray-500">
+      <div className="max-w-[1680px] flex flex-col px-4 -mt-8 text-gray-500">
         <div className="flex flex-row flex-wrap gap-1 items-center justify-end">
           <p className="text-xs">{"{ "}Esse portifólio foi criado com</p>
           <DiReact size={19} className="text-blue-400 opacity-70" />

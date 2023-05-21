@@ -24,7 +24,10 @@ export function Socials() {
           </a>
         </li>
         <li>
-          <a href="#" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/gabriel-felipe-569b4a193"
+            target="_blank"
+          >
             <motion.img
               src={linkedin}
               className="md:w-8 md:h-8 w-7 h-7 invert opacity-90"
