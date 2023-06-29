@@ -17,11 +17,10 @@ export function Home() {
   const doubleDragon = useRef<HTMLImageElement>(null);
   const isSmall = useIsSmall();
 
-  const { borderAnimate, dragonMovement, videoAnimate, projectsAnimate } =
-    AnimationMotion({
-      handlerDom,
-      isSmall,
-    });
+  const { borderAnimate, dragonMovement, videoAnimate, projectsAnimate } = AnimationMotion({
+    handlerDom,
+    isSmall,
+  });
 
   function handleDragon() {
     setHandlerDom(!handlerDom);
@@ -45,16 +44,13 @@ export function Home() {
         >
           <div className="px-8 text-gray-100 md:col-span-2 col-span-2 font-Noto-Sans">
             <h2 className="md:text-[55px] text-2xl md:mt-0 mt-2 leading-none 2xl:text-center text-start">
-              Oi, me chamo{" "}
-              <strong className="font-bold text-red-800">Gabriel Felipe</strong>
+              Oi, me chamo <strong className="font-bold text-red-800">Gabriel Felipe</strong>
             </h2>
             <p className="2xl:text-center text-start md:mt-4 mt-2 text-sm md:text-base">
-              Sou um desenvolvedor web estudando frontend com React + TypeScript
-              e backend com Node.
+              Desenvolvedor web estudando frontend com React + TypeScript e backend com Node.
             </p>
             <p className="2xl:text-center text-start md:mt-0 mt-1 md:text-base text-sm">
-              Na parte acadêmica, estou cursando o último semestre de Análise e
-              Desenvolvimento de Sistemas.
+              Na parte acadêmica, sou recém formado em Análise e Desenvolvimento de Sistemas.
             </p>
           </div>
           <motion.video

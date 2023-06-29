@@ -24,10 +24,7 @@ export function Socials() {
           </a>
         </li>
         <li>
-          <a
-            href="https://www.linkedin.com/in/gabriel-felipe-569b4a193"
-            target="_blank"
-          >
+          <a href="https://www.linkedin.com/in/gabriel-felipe-569b4a193" target="_blank">
             <motion.img
               src={linkedin}
               className="md:w-8 md:h-8 w-7 h-7 invert opacity-90"
@@ -43,7 +40,7 @@ export function Socials() {
         </li>
         <li>
           <a
-            href="https://drive.google.com/u/0/uc?id=1aOaJO0nTlWOAMLKOIlmh4h4pq4avae66&export=download"
+            href="https://drive.google.com/u/4/uc?id=1FUuxVYkHIkEnQ-sZ6uaPuG_SqNPUWrQE&export=download"
             target="_blank"
           >
             <motion.img
